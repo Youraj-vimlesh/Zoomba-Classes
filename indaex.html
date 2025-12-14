@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zumba Fitness Center</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#f5f5f5;
+  color:#333;
+}
+
+/* NAVBAR */
+nav{
+  background:#ff2ecb;
+  padding:15px 30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav h1{
+  color:white;
+}
+
+nav a{
+  color:white;
+  margin-left:15px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* HERO */
+.hero{
+  background:#ffe6f7;
+  padding:80px 20px;
+  text-align:center;
+}
+
+.hero h2{
+  font-size:36px;
+  color:#ff2ecb;
+}
+
+.hero p{
+  margin:15px 0;
+  font-size:18px;
+}
+
+.hero button{
+  padding:12px 30px;
+  background:#ff2ecb;
+  color:white;
+  border:none;
+  border-radius:25px;
+  font-size:16px;
+  cursor:pointer;
+}
+
+/* SECTION */
+section{
+  padding:50px 20px;
+}
+
+section h2{
+  text-align:center;
+  color:#ff2ecb;
+  margin-bottom:30px;
+}
+
+/* TEAM */
+.team{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.card{
+  background:white;
+  width:260px;
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  text-align:center;
+}
+
+.card img{
+  width:200px;
+  height:300px;
+  border-radius:50%;
+  margin-bottom:10px;
+}
+
+.whatsapp-btn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:14px 20px;
+  border-radius:50px;
+  font-weight:bold;
+  text-decoration:none;
+}
+    .gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+  max-width:1000px;
+  margin:auto;
+}
+
+.gallery-card{
+  background:white;
+  padding:10px;
+  border-radius:15px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.gallery-card img,
+.gallery-card video{
+  width:100%;
+  border-radius:12px;
+}
+
+   
+
+
+/* CLASSES */
+.classes{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+  max-width:800px;
+  margin:auto;
+}
+
+.class-box{
+  background:#ff2ecb;
+  color:white;
+  padding:20px;
+  border-radius:12px;
+  text-align:center;
+  font-weight:bold;
+}
+
+/* FORM */
+form{
+  background:white;
+  max-width:500px;
+  margin:auto;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+form input, form select, form textarea{
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+}
+
+form button{
+  background:#ff2ecb;
+  color:white;
+  padding:12px;
+  border:none;
+  width:100%;
+  font-size:16px;
+  border-radius:25px;
+}
+
+/* FOOTER */
+footer{
+  background:#222;
+  color:white;
+  text-align:center;
+  padding:15px;
+  margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h1>Zumba Center</h1>
+  <div>
+    <a href="#about">About</a>
+    <a href="#team">Team</a>
+    <a href="#join">Join</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <h2>Feel the Beat, Burn the Calories</h2>
+  <p>Best Zumba Fitness Center for all age groups</p>
+  <button onclick="document.getElementById('join').scrollIntoView()">Join Now</button>
+</div>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p style="max-width:600px;margin:auto;text-align:center;">
+    We provide professional Zumba training with fun, energy, and guaranteed fitness results.
+  </p>
+</section>
+
+<section id="team">
+  <h2>Director & Manager</h2>
+  <div class="team">
+    <div class="card">
+      <img src="manish.jpg">
+      <h3>Manish Paswan</h3>
+      <p><b>Director</b></p>
+      <a href="https://www.instagram.com/manishpaswan745?igsh=MW8ycW44MXE4eXdyeQ==" target="_blank" class="insta-btn">Instagram</a>
+   
+</a>
+      <p>10+ years certified Zumba Trainer</p>
+    </div>
+    <div class="card">
+      <img src="vimlesh.png">
+      <h3>Kumar Vimlesh</h3>
+      <p><b>Manager</b></p>
+     <a href="https://www.instagram.com/youraj_vimlesh_08?utm_source=qr&igsh=NHE0ZGdwM3ZmaHdn " target="_blank" class="insta-btn">Instagram</a>
+    <a href="https://wa.me/9021673382"
+   target="_blank"
+   class="whatsapp-btn">
+   WhatsApp
+</a>
+      <p>Client & batch management expert</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Our Classes</h2>
+  <div class="classes">
+    <div class="class-box">Zumba Basic</div>
+    <div class="class-box">Advanced Zumba</div>
+    <div class="class-box">Weight Loss</div>
+    <div class="class-box">Kids Zumba</div>
+  </div>
+</section>
+    <section id="gallery">
+  <h2>Our Zumba Gallery</h2>
+
+  <div class="gallery">
+    <!-- IMAGE -->
+    <div class="gallery-card">
+      <img src="Galary2.png" alt="Zumba Class">
+    </div>
+
+    <!-- IMAGE -->
+    <div class="gallery-card">
+      <img src="galary1.png" alt="Zumba Workout">
+    </div>
+
+    <!-- VIDEO -->
+    <div class="gallery-card">
+      <video controls>
+        <source src="galary.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <!-- Instagram Redirect -->
+  <div style="text-align:center;margin-top:30px;">
+    <a href="https://www.instagram.com/manishpaswan745?igsh=MW8ycW44MXE4eXdyeQ=="
+       target="_blank"
+       class="insta-btn">
+       View More on Instagram
+    </a>
+  </div>
+</section>
+    
+
+
+<section id="join">
+  <h2>Join / Enquiry</h2>
+  <form onsubmit="redirectToWhatsApp(event)">
+
+    <input type="text" placeholder="Full Name" required>
+    <input type="number" placeholder="Age" required>
+    <input type="tel" placeholder="Phone Number" required>
+    <select required>
+      <option value="">Select Batch</option>
+      <option>Morning</option>
+      <option>Evening</option>
+    </select>
+    <textarea placeholder="Fitness Goal"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 Manish Zumba Fitness Center | All Rights Reserved
+</footer>
+
+<script>
+function redirectToWhatsApp(e){
+  e.preventDefault();
+  window.open("https://wa.me/7226900767","_blank");
+}
+</script>
+<script async src="https://www.instagram.com/embed.js"></script>
+
+
+</body>
+</html>
